@@ -3,14 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Gagandeep Bhatia - Visionary at the intersection of natural sciences, controlled environments, and digital interfaces.">
-    <title>Gagandeep Bhatia</title>
+    <meta name="description" content="Official site of Gagandeep Bhatia – Indian entrepreneur and founder of Crown Harvest, working across medicinal farming and technology.">
+    <meta name="keywords" content="Gagandeep Bhatia, entrepreneur, Crown Harvest, medicinal farming, technology, India">
+    <meta name="author" content="Gagandeep Bhatia">
+    <title>Gagandeep Bhatia – Entrepreneur, Founder of Crown Harvest</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Lora:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
     <style>
         :root {
             --primary-bg: #1A1A1A;
             --accent-gold: #D4A017;
             --text-light: #F5F5F5;
             --muted-green: #2E3A2F;
+            --shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
         }
 
         * {
@@ -20,10 +25,10 @@
         }
 
         body {
-            font-family: 'Cinzel', serif;
+            font-family: 'Lora', serif;
             background-color: var(--primary-bg);
             color: var(--text-light);
-            line-height: 1.6;
+            line-height: 1.8;
             overflow-x: hidden;
         }
 
@@ -44,94 +49,107 @@
             background-size: cover;
             background-position: center;
             position: relative;
+            box-shadow: var(--shadow);
         }
 
         header h1 {
-            font-size: 4.5rem;
+            font-family: 'Cinzel', serif;
+            font-size: 5rem;
             font-weight: 700;
-            letter-spacing: 2px;
+            letter-spacing: 3px;
             text-transform: uppercase;
-            margin-bottom: 1rem;
+            margin-bottom: 1.5rem;
             opacity: 0;
             animation: fadeInUp 1s ease forwards;
         }
 
         header p {
-            font-size: 1.5rem;
-            font-family: 'Lora', serif;
-            max-width: 600px;
+            font-size: 1.6rem;
+            font-style: italic;
+            max-width: 700px;
             opacity: 0;
             animation: fadeInUp 1s ease 0.5s forwards;
         }
 
         section {
-            padding: 100px 0;
+            padding: 120px 0;
             border-top: 1px solid var(--accent-gold);
+            position: relative;
         }
 
         h2 {
-            font-size: 2.5rem;
+            font-family: 'Cinzel', serif;
+            font-size: 2.8rem;
             font-weight: 700;
             color: var(--accent-gold);
-            margin-bottom: 2rem;
+            margin-bottom: 2.5rem;
             text-align: center;
             text-transform: uppercase;
+            letter-spacing: 1.5px;
         }
 
-        .about, .vision, .projects, .research {
+        .about, .vision, .projects, .research, .insights {
             margin: 0 auto;
-            max-width: 800px;
+            max-width: 900px;
             text-align: center;
         }
 
-        .about p, .vision p, .projects p, .research p {
-            font-family: 'Lora', serif;
-            font-size: 1.2rem;
-            margin-bottom: 1.5rem;
+        .about p, .vision p, .projects p, .research p, .insights p {
+            font-size: 1.3rem;
+            margin-bottom: 2rem;
             opacity: 0;
             animation: fadeIn 1.5s ease forwards;
+            transition: transform 0.5s ease;
         }
 
-        .research blockquote {
+        .about p:hover, .vision p:hover, .research p:hover, .insights p:hover {
+            transform: translateY(-5px);
+        }
+
+        .research blockquote, .insights blockquote {
             font-style: italic;
-            font-size: 1.3rem;
+            font-size: 1.4rem;
             color: var(--accent-gold);
             border-left: 4px solid var(--accent-gold);
-            padding-left: 20px;
-            margin: 2rem 0;
+            padding-left: 25px;
+            margin: 2.5rem 0;
+            opacity: 0;
+            animation: fadeIn 1.5s ease 0.2s forwards;
         }
 
         .contact {
             text-align: center;
-            padding: 50px 0;
+            padding: 60px 0;
             background-color: var(--muted-green);
+            box-shadow: var(--shadow);
         }
 
         .contact a {
             color: var(--accent-gold);
             text-decoration: none;
-            font-size: 1.5rem;
+            font-size: 1.7rem;
             font-family: 'Lora', serif;
-            transition: color 0.3s ease;
+            transition: color 0.3s ease, transform 0.3s ease;
         }
 
         .contact a:hover {
             color: var(--text-light);
+            transform: scale(1.05);
         }
 
         footer {
             text-align: center;
-            padding: 20px 0;
+            padding: 30px 0;
             background-color: var(--primary-bg);
             color: var(--text-light);
-            font-family: 'Lora', serif;
-            font-size: 0.9rem;
+            font-size: 1rem;
+            font-style: italic;
         }
 
         @keyframes fadeInUp {
             from {
                 opacity: 0;
-                transform: translateY(20px);
+                transform: translateY(30px);
             }
             to {
                 opacity: 1;
@@ -148,21 +166,29 @@
             }
         }
 
+        section.visible p, section.visible blockquote {
+            animation-play-state: running;
+        }
+
         @media (max-width: 768px) {
             header h1 {
-                font-size: 2.5rem;
+                font-size: 3rem;
             }
 
             header p {
-                font-size: 1rem;
+                font-size: 1.2rem;
             }
 
             h2 {
-                font-size: 2rem;
+                font-size: 2.2rem;
             }
 
-            .about p, .vision p, .projects p, .research p {
-                font-size: 1rem;
+            .about p, .vision p, .projects p, .research p, .insights p {
+                font-size: 1.1rem;
+            }
+
+            .contact a {
+                font-size: 1.3rem;
             }
         }
     </style>
@@ -171,55 +197,113 @@
     <header>
         <div class="container">
             <h1>Gagandeep Bhatia</h1>
-            <p>Operating at the intersection of natural sciences, controlled environments, and digital interfaces.</p>
+            <p>Entrepreneur • Builder • First-Generation Visionary</p>
+            <p>Official website of Gagandeep Bhatia, an Indian entrepreneur based in Punjab, India, shaping the future of medicinal farming and technology.</p>
         </div>
     </header>
 
     <section class="about">
         <div class="container">
-            <h2>About</h2>
-            <p>A visionary founder and researcher dedicated to redefining the boundaries of natural systems and digital innovation. My work is quiet, deliberate, and focused on creating impact that speaks for itself.</p>
-            <p>“I do fewer things. But I do them very, very well.”</p>
+            <h2>About Gagandeep Bhatia</h2>
+            <p>Gagandeep Bhatia is a visionary founder and researcher reshaping the boundaries of natural systems and digital interfaces. Based in Punjab, India, his work is deliberate, discreet, and designed to create lasting impact through innovative solutions in medicinal farming and technology.</p>
+            <p>“I do fewer things. But I do them with unmatched precision.”</p>
         </div>
     </section>
 
     <section class="projects">
         <div class="container">
             <h2>Projects</h2>
-            <p>Currently under development. Reach out privately for inquiries.</p>
+            <p>Gagandeep Bhatia, founder of Crown Harvest, is crafting initiatives of global significance. Currently under development. For private discussions, reach out directly.</p>
         </div>
     </section>
 
     <section class="research">
         <div class="container">
             <h2>Research</h2>
-            <p>Exploring the synthesis of rare medicinal plants and adaptive systems for a sustainable future.</p>
+            <p>Gagandeep Bhatia is pioneering the synthesis of rare medicinal plants and adaptive systems for a resilient, sustainable future.</p>
             <blockquote>“The work speaks for itself. In time, so will the results.”</blockquote>
-            <p>Focused on global sourcing and high-integrity distribution of transformative biological solutions.</p>
+            <p>Focused on global sourcing and high-integrity distribution of transformative biological solutions, his research bridges nature and technology.</p>
+        </div>
+    </section>
+
+    <section class="insights">
+        <div class="container">
+            <h2>Insights</h2>
+            <p>Reflections from Gagandeep Bhatia on the convergence of nature and technology, crafted with intention.</p>
+            <blockquote>“Progress is not in the noise, but in the quiet moments of clarity.”</blockquote>
+            <p>Every challenge is an opportunity to redefine what’s possible, blending innovation with purpose.</p>
         </div>
     </section>
 
     <section class="vision">
         <div class="container">
             <h2>Vision</h2>
-            <p>In ten years, the world will see ecosystems that thrive through precision, intention, and technology. My mission is to architect those systems, quietly and with unrelenting focus.</p>
+            <p>In a decade, Gagandeep Bhatia envisions a world where ecosystems thrive through precision, intention, and technology. His mission is to architect those systems with unrelenting focus and quiet confidence, transforming medicinal farming and digital interfaces.</p>
         </div>
     </section>
 
     <section class="contact">
         <div class="container">
+            <h2>Contact</h2>
             <p>For inquiries: <a href="mailto:inquiries@gagandeepbhatia.in">inquiries@gagandeepbhatia.in</a></p>
         </div>
     </section>
 
     <footer>
         <div class="container">
-            <p>“On sabbatical. Working on something quiet but important.”</p>
+            <p>“On sabbatical. Building something quiet but transformative.”</p>
+            <p>Gagandeep Bhatia – Founder of Crown Harvest, Punjab, India</p>
         </div>
     </footer>
 
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Gagandeep Bhatia",
+        "jobTitle": "Entrepreneur and Founder of Crown Harvest",
+        "description": "Gagandeep Bhatia is an Indian entrepreneur based in Punjab, working at the intersection of medicinal farming and technology.",
+        "url": "https://www.gagandeepbhatia.in",
+        "sameAs": [
+            "https://www.linkedin.com/in/gagandeepbhatia",
+            "https://www.crownharvest.com"
+        ],
+        "image": "portrait.jpg",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Punjab",
+            "addressCountry": "India"
+        }
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "Who is Gagandeep Bhatia?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Gagandeep Bhatia is an Indian entrepreneur and founder of Crown Harvest, based in Punjab, India, focusing on medicinal farming and technology."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What is Gagandeep Bhatia's vision?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Gagandeep Bhatia envisions a world where ecosystems thrive through precision, intention, and technology, transforming medicinal farming and digital interfaces over the next decade."
+                }
+            }
+        ]
+    }
+    </script>
+
     <script>
-        // Smooth scroll for any anchor links
+        // Smooth scroll for anchor links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
@@ -236,10 +320,17 @@
                     entry.target.classList.add('visible');
                 }
             });
-        }, { threshold: 0.1 });
+        }, { threshold: 0.2 });
 
         document.querySelectorAll('section').forEach(section => {
             observer.observe(section);
+        });
+
+        // Parallax effect for header background
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            const scrollPosition = window.scrollY;
+            header.style.backgroundPositionY = `${scrollPosition * 0.5}px`;
         });
     </script>
 </body>
