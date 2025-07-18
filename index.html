@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Gagandeep Bhatia - Visionary at the intersection of natural sciences, controlled environments, and digital interfaces.">
+    <title>Gagandeep Bhatia</title>
+    <style>
+        :root {
+            --primary-bg: #1A1A1A;
+            --accent-gold: #D4A017;
+            --text-light: #F5F5F5;
+            --muted-green: #2E3A2F;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Cinzel', serif;
+            background-color: var(--primary-bg);
+            color: var(--text-light);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('portrait.jpg');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+
+        header h1 {
+            font-size: 4.5rem;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 1rem;
+            opacity: 0;
+            animation: fadeInUp 1s ease forwards;
+        }
+
+        header p {
+            font-size: 1.5rem;
+            font-family: 'Lora', serif;
+            max-width: 600px;
+            opacity: 0;
+            animation: fadeInUp 1s ease 0.5s forwards;
+        }
+
+        section {
+            padding: 100px 0;
+            border-top: 1px solid var(--accent-gold);
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--accent-gold);
+            margin-bottom: 2rem;
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        .about, .vision, .projects, .research {
+            margin: 0 auto;
+            max-width: 800px;
+            text-align: center;
+        }
+
+        .about p, .vision p, .projects p, .research p {
+            font-family: 'Lora', serif;
+            font-size: 1.2rem;
+            margin-bottom: 1.5rem;
+            opacity: 0;
+            animation: fadeIn 1.5s ease forwards;
+        }
+
+        .research blockquote {
+            font-style: italic;
+            font-size: 1.3rem;
+            color: var(--accent-gold);
+            border-left: 4px solid var(--accent-gold);
+            padding-left: 20px;
+            margin: 2rem 0;
+        }
+
+        .contact {
+            text-align: center;
+            padding: 50px 0;
+            background-color: var(--muted-green);
+        }
+
+        .contact a {
+            color: var(--accent-gold);
+            text-decoration: none;
+            font-size: 1.5rem;
+            font-family: 'Lora', serif;
+            transition: color 0.3s ease;
+        }
+
+        .contact a:hover {
+            color: var(--text-light);
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: var(--primary-bg);
+            color: var(--text-light);
+            font-family: 'Lora', serif;
+            font-size: 0.9rem;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.5rem;
+            }
+
+            header p {
+                font-size: 1rem;
+            }
+
+            h2 {
+                font-size: 2rem;
+            }
+
+            .about p, .vision p, .projects p, .research p {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Gagandeep Bhatia</h1>
+            <p>Operating at the intersection of natural sciences, controlled environments, and digital interfaces.</p>
+        </div>
+    </header>
+
+    <section class="about">
+        <div class="container">
+            <h2>About</h2>
+            <p>A visionary founder and researcher dedicated to redefining the boundaries of natural systems and digital innovation. My work is quiet, deliberate, and focused on creating impact that speaks for itself.</p>
+            <p>“I do fewer things. But I do them very, very well.”</p>
+        </div>
+    </section>
+
+    <section class="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <p>Currently under development. Reach out privately for inquiries.</p>
+        </div>
+    </section>
+
+    <section class="research">
+        <div class="container">
+            <h2>Research</h2>
+            <p>Exploring the synthesis of rare medicinal plants and adaptive systems for a sustainable future.</p>
+            <blockquote>“The work speaks for itself. In time, so will the results.”</blockquote>
+            <p>Focused on global sourcing and high-integrity distribution of transformative biological solutions.</p>
+        </div>
+    </section>
+
+    <section class="vision">
+        <div class="container">
+            <h2>Vision</h2>
+            <p>In ten years, the world will see ecosystems that thrive through precision, intention, and technology. My mission is to architect those systems, quietly and with unrelenting focus.</p>
+        </div>
+    </section>
+
+    <section class="contact">
+        <div class="container">
+            <p>For inquiries: <a href="mailto:inquiries@gagandeepbhatia.in">inquiries@gagandeepbhatia.in</a></p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>“On sabbatical. Working on something quiet but important.”</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scroll for any anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Fade-in animation on scroll
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('section').forEach(section => {
+            observer.observe(section);
+        });
+    </script>
+</body>
+</html>
